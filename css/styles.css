@@ -1,0 +1,267 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+#about,
+#coursework,  #projects,
+#involv-honors {
+  background-color: #4c3575;
+  color: #fff;
+  padding: 3% 15%;
+}
+
+#education,
+#tech-skills,
+#work-experience, #footer {
+  background-color: #fff;
+  color: #222831;
+  padding: 3% 15%;
+}
+
+#education {
+  text-align: left !important;
+  padding: 3% 20%;
+}
+
+#work-experience {
+  text-align: left !important;
+
+  padding: 3% 20%;
+}
+
+#projects {
+  align-items: center !important;
+  padding: 3% 25%;
+}
+
+#involv-honors {
+  text-align: left !important;
+  padding: 3% 20%;
+}
+
+#footer {
+  padding: 1.2% 0!important;
+  text-align: center;
+}
+
+#coursework {
+  padding: 3% 28%;
+}
+
+@media (max-width: 800px) {
+  #coursework {
+    padding: 3% 5%;
+  }
+}
+
+.container-fluid {
+  padding: 10px 8% 3%;
+}
+
+.navbar-css {
+  font-family: "Roboto Mono";
+  padding-bottom: 4.5rem;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: 500;
+}
+
+.nav-item {
+  padding: 0 8px;
+  font-weight: lighter;
+}
+
+/* Experimentation */
+.circle {
+  height: 45px;
+  width: 45px;
+  background-color: rgb(167, 157, 157);
+  border-radius: 50%;
+}
+
+.socials {
+  margin: 7% 3%;
+  size: 1.5rem;
+}
+
+.circle:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 30px 6px rgba(255, 255, 255, 0.75);
+  height: 50px;
+  width: 50px;
+  margin: 25px 25px;
+  border-radius: 50%;
+}
+
+.fa-2x {
+  font-size: 15px;
+}
+
+.social-btn {
+  background-color: #4c3575;
+  box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.75);
+  color: rgba(255, 255, 255, 0.808);
+  border: rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 1000px) and (max-width: 1245px) {
+  .nav-item {
+    padding: 0 3px;
+    font-weight: lighter;
+  }
+}
+
+@media (max-width: 500px) {
+  /* disable a class */
+
+  .circle {
+    height: 35px;
+    width: 35px;
+    background-color: rgb(167, 157, 157);
+    border-radius: 50%;
+  }
+  
+  .socials {
+    margin: 7% 3%;
+    size: 1.5rem;
+  }
+  
+  .circle:hover {
+    transition: 0.2s;
+    /* box-shadow: 0px 0px 30px 6px rgba(255, 255, 255, 0.75); */
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  .fa-2x {
+    font-size: 10px;
+  }
+  .social-btn {
+    background-color: #4c3575;
+    box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.75);
+    color: rgba(255, 255, 255, 0.808);
+    filter: blur(5px);
+    border: rgba(0, 0, 0, 0.75);
+  }
+}
+
+.education-row {
+  font-size: larger;
+}
+
+.clg-yrs {
+  text-align: right;
+}
+
+@media (max-width: 991px) {
+  .clg-yrs {
+    text-align: center;
+  }
+
+  #education, #work-experience, #involv-honors {
+    text-align: center !important;
+    font-size: smaller;
+  }
+}
+
+.skills-text {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.skill-icon {
+  font-size: 60px;
+  padding: 20px 8px;
+}
+
+
+.coursework-btn {
+  padding: 13px;
+  border-radius: 16px;
+}
+
+.coursework-btn:hover {
+  transition: 0.3s;
+
+  border-radius: 16px;
+  background: linear-gradient(145deg, #b5a9c0, #988ea1);
+  box-shadow: 7px 7px 20px #958b9e, -7px -7px 20px #bdb1c8;
+}
+
+.coursework-btn:focus {
+  background-color: #fff;
+  box-shadow: none !important;
+}
+
+.coursework-btn:focus .cousework-dropdown {
+  transform: rotate(90deg);
+}
+
+.course-card {
+  background-color: #fff;
+  color: #4c3575;
+  text-align: left !important;
+  border-radius: 10px;
+
+  padding: 2% 5%;
+  margin-bottom: 2%;
+}
+
+.project-row {
+  color: #000;
+  text-align: left;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #4c3575;
+}
+
+.btn-purple{
+  background-color: #4c3575;
+  color: #fff;
+}
+
+.btn-purple:hover {
+  background-color: #fff;
+  color: #4c3575;
+  
+  transition: 0.25s; 
+}
+
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4c3575;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
